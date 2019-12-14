@@ -12,7 +12,8 @@ Element styles
 header {
   background-color: hsla(224, 100%, 16%, 1.0);
   border-radius: 10px;
-
+  display: flex;
+  flex-direction: row;
   top: 0;
   height: 80px;
   width: 100%;
@@ -25,15 +26,27 @@ li {
 /* ==========================================================
 class styles
 =============================================================*/
-.header-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  text-decoration: none;
 
+.alert-box {
+background-color: rgb(232, 199, 38);
+border-radius: 7px;
+font-family: 'Bebas Neue', sans-serif;
+font-size: 1.1rem;
+padding: 5px;
+line-height: 1.5;
+width: 80%;
+margin: 0 auto;
 }
+
+.close-alert {
+  margin-left: auto;
+}
+
+
 .header-buttons li{
 background-color: rgb(3, 189, 3);
+justify-content: flex-end;
+display: inline-flex;
 color: white;
 padding: 5px;
 margin: 10px 15px 10px 5px;
@@ -41,11 +54,15 @@ list-style: none;
 border-radius: 7px;
 height: 3rem;
 width: 4rem;
+text-decoration: none;
 }
 
 .Company-name {
+  font-size: 2rem;
   color: white;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: auto;
+  font-family: 'Francois One', sans-serif;
 }
 
 
@@ -53,6 +70,8 @@ width: 4rem;
 /*============================================
 Id styles
 =============================================*/
+
+
 
 /*============================================
 player profile styles
@@ -62,10 +81,8 @@ player profile styles
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgb(168, 168, 168);
   padding: 15px;
-  margin-bottom: 45px;
-  margin-top: 15px;
+
 
 }
 
@@ -74,7 +91,7 @@ player profile styles
 }
 
 .profile-name {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
 }
 
@@ -83,14 +100,14 @@ player profile styles
 }
 
 .profile-age {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   margin-left: 1rem;
 }
 
 .style-online {
   font-size: 2.5rem;
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   padding: 5px;
   color: white;
   background-color: rgb(52, 192, 64);
@@ -101,11 +118,16 @@ player profile styles
 
 .style-offline {
   font-size: 2.5rem;
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   padding: 5px;
   color: white;
   background-color: rgb(240, 81, 60);
   border: 1px solid rgb(213, 39, 16);
   border-radius: 7px;
   margin-left: auto;
+}
+
+.flex-container:nth-child(2n) {
+  background-color: rgb(227, 226, 226);
+
 }
